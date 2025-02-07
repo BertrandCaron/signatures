@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<ContainerSignatureMapping schemaVersion="1.0" signatureVersion="03000803"> 
+    <ContainerSignatures>
+
+        <ContainerSignature Id="1000" ContainerType="ZIP">
+            <Description>Android Package</Description>
+            <Files>
+                <File>
+                    <Path>classes.dex</Path>
+                </File>
+					 <File>
+                    <Path>AndroidManifest.xml</Path>
+                    <BinarySignatures>
+                        <InternalSignatureCollection>                    
+	                        <InternalSignature ID="300">
+	                            <ByteSequence Reference="BOFoffset">
+	                                <SubSequence Position="1" SubSeqMinOffset="0" SubSeqMaxOffset="0">
+	                                    <Sequence>03 00 08 00</Sequence>
+	                                </SubSequence>
+	                            </ByteSequence>
+	                        </InternalSignature>
+	                    </InternalSignatureCollection>
+                    </BinarySignatures>
+                </File>              
+            </Files>
+        </ContainerSignature>
+        
+        <ContainerSignature Id="2000" ContainerType="ZIP">
+            <Description>Android App Bundle</Description>
+            <Files>
+					 <File>
+                    <Path>base/manifest/AndroidManifest.xml</Path>
+                    <BinarySignatures>
+                        <InternalSignatureCollection>                    
+	                        <InternalSignature ID="300">
+	                            <ByteSequence Reference="BOFoffset">
+	                                <SubSequence Position="1" SubSeqMinOffset="7" SubSeqMaxOffset="0">
+	                                    <Sequence>61 6E 64 72 6F 69 64</Sequence>
+	                                </SubSequence>
+	                            </ByteSequence>
+	                        </InternalSignature>
+	                    </InternalSignatureCollection>
+                    </BinarySignatures>
+                </File>              
+            </Files>
+        </ContainerSignature>
+ 
+         <ContainerSignature Id="3000" ContainerType="ZIP">
+            <Description>Android Archive</Description>
+            <Files>
+					 <File>
+                    <Path>AndroidManifest.xml</Path>
+                    <BinarySignatures>
+                        <InternalSignatureCollection>                    
+	                        <InternalSignature ID="300">
+	                            <ByteSequence Reference="BOFoffset">
+	                                <SubSequence Position="1" SubSeqMinOffset="0" SubSeqMaxOffset="4096">
+	                                    <Sequence>'manifest xmlns:android='</Sequence>
+	                                </SubSequence>
+	                            </ByteSequence>
+	                        </InternalSignature>
+	                    </InternalSignatureCollection>
+                    </BinarySignatures>
+                </File>              
+            </Files>
+        </ContainerSignature>
+    </ContainerSignatures>
+  
+    <FileFormatMappings>
+    
+    	<!--  Android Package (ZIP)-->
+      <FileFormatMapping signatureId="1000" Puid="BYUdev/1"/>
+      
+        <!--  Android App Bundle (ZIP)-->
+      <FileFormatMapping signatureId="2000" Puid="BYUdev/2"/>
+      
+        <!--  Android Archive (ZIP)-->
+      <FileFormatMapping signatureId="3000" Puid="BYUdev/3"/>
+
+    </FileFormatMappings>
+  
+    <TriggerPuids>
+        <TriggerPuid ContainerType="OLE2" Puid="fmt/111"/> 
+        <TriggerPuid ContainerType="ZIP" Puid="fmt/189"/> 
+        <TriggerPuid ContainerType="ZIP" Puid="x-fmt/263"/> 
+    </TriggerPuids>
+
+</ContainerSignatureMapping>
