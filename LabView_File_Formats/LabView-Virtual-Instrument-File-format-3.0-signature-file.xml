@@ -24,7 +24,7 @@
 </InternalSignature>
 </InternalSignatureCollection>
 <FileFormatCollection>
-  <FileFormat ID="1" Name="LabView Virtual Instrument File format" PUID="dev/1" Version="3.0" MIMEType="">
+  <FileFormat ID="1" Name="LabVIEW Virtual Instrument" PUID="dev/1" Version="3.0" MIMEType="">
     <InternalSignatureID>1</InternalSignatureID>
     <Extension>vi</Extension>
     <Extension>vtt</Extension>
