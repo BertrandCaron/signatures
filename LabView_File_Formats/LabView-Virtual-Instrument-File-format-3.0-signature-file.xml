@@ -27,7 +27,7 @@
   <FileFormat ID="1" Name="LabView Virtual Instrument File format" PUID="dev/1" Version="3.0" MIMEType="">
     <InternalSignatureID>1</InternalSignatureID>
     <Extension>vi</Extension>
-    <Extension>vit</Extension>
+    <Extension>vtt</Extension>
     <Extension>vim</Extension>
   </FileFormat>
 </FileFormatCollection></FFSignatureFile>
