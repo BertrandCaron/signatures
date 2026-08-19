@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FFSignatureFile xmlns="http://www.nationalarchives.gov.uk/pronom/SignatureFile" Version="1787130731" DateCreated="2026-08-19T09:12:11+00:00">
+  <InternalSignatureCollection>
+  <InternalSignature ID="1" Specificity="Specific">
+  <ByteSequence Reference="BOFoffset">
+    <SubSequence MinFragLength="0" Position="1" SubSeqMaxOffset="80" SubSeqMinOffset="0">
+      <Sequence>(0A|0D|0D0A){10}[30:39][30:39][30:39][30:39][30:39][30:39][30:39][30:39][30:39][30:39](32|33)(44|64)</Sequence>
+    </SubSequence>
+  </ByteSequence>
+    <ByteSequence Reference="EOFoffset">
+    <SubSequence MinFragLength="0" Position="1" SubSeqMaxOffset="2" SubSeqMinOffset="0">
+      <Sequence>(0A|0D|0D0A)24242424</Sequence>
+    </SubSequence>
+  </ByteSequence>
+</InternalSignature>
+</InternalSignatureCollection>
+<FileFormatCollection>
+  <FileFormat ID="1" Name="Structure-data file (SDF)" PUID="dev/1" Version="1.0" MIMEType="chemical/x-mdl-sdfile">
+    <InternalSignatureID>1</InternalSignatureID>
+    <Extension>sdf</Extension>
+  </FileFormat>
+</FileFormatCollection></FFSignatureFile>
