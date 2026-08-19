@@ -5,5 +5,5 @@
 ## New signatures
 
 * dev/1 Structure-data file (SDF)\
-BOF: `(0A|0D|0D0A){10}[30:39][30:39][30:39][30:39][30:39][30:39][30:39][30:39][30:39][30:39](32|33)(44|64)` 80 max offset\
+BOF: `(0A|0D|0D0A){20}(32|33)(44|64)` 80 max offset\
 EOF: `(0A|0D|0D0A)24242424` 2 max offset
