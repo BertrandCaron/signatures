@@ -5,5 +5,5 @@
 ## New signatures
 
 * dev/1 Structure-data file (SDF)\
-BOF: `(0A|0D|0D0A){20}(32|33)(44|64)` 80 max offset\
-EOF: `(0A|0D|0D0A)24242424` 2 max offset
+BOF: three lines with up to 80 ASCII characters, then 34 characters, then the MOL file version number (V2000 or V3000): `(0A|0D|0D0A){0-80}(0A|0D|0D0A){0-80}(0A|0D|0D0A){34}'V'('2'|'3')'000'` 80 max offset\
+EOF: one new line followed by four dollar signs: `(0A|0D|0D0A)'$$$$'` and possibly a certain number of new lines (16 max offset)
