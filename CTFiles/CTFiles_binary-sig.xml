@@ -113,12 +113,12 @@
       <Extension>sdf</Extension>
       <Extension>sd</Extension>
     </FileFormat>
-    <FileFormat ID="2" Name="V2000 MOL file" PUID="dev/2" Version="V2000"
+    <FileFormat ID="2" Name="V2000 Molfile" PUID="dev/2" Version="V2000"
       MIMEType="chemical/x-mdl-molfile">
       <InternalSignatureID>2</InternalSignatureID>
       <Extension>mol</Extension>
     </FileFormat>
-    <FileFormat ID="3" Name="V3000 MOL file" PUID="dev/3" Version="V3000"
+    <FileFormat ID="3" Name="V3000 Molfile" PUID="dev/3" Version="V3000"
       MIMEType="chemical/x-mdl-molfile">
       <InternalSignatureID>3</InternalSignatureID>
       <Extension>mol</Extension>
