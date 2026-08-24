@@ -1,55 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<FFSignatureFile xmlns="http://www.nationalarchives.gov.uk/pronom/SignatureFile" Version="1787130731" DateCreated="2026-08-19T09:12:11+00:00">
+<FFSignatureFile xmlns="http://www.nationalarchives.gov.uk/pronom/SignatureFile"
+  Version="1787130731" DateCreated="2026-08-19T09:12:11+00:00">
   <InternalSignatureCollection>
-  <InternalSignature ID="1" Specificity="Specific">
-  <ByteSequence Reference="BOFoffset">
-    <SubSequence MinFragLength="0" Position="1" SubSeqMaxOffset="80" SubSeqMinOffset="0">
-      <Sequence>(0A|0D|0D0A){0-80}(0A|0D|0D0A){0-80}(0A|0D|0D0A){34}'V'('2'|'3')'000'</Sequence>
-    </SubSequence>
-  </ByteSequence>
-    <ByteSequence Reference="EOFoffset">
-    <SubSequence MinFragLength="0" Position="1" SubSeqMaxOffset="16" SubSeqMinOffset="0">
-      <Sequence>(0A|0D|0D0A)'$$$$'</Sequence>
-    </SubSequence>
-  </ByteSequence>
-</InternalSignature>
-  <InternalSignature ID="2" Specificity="Specific">
-  <ByteSequence Reference="BOFoffset">
-    <SubSequence MinFragLength="0" Position="1" SubSeqMaxOffset="80" SubSeqMinOffset="0">
-      <Sequence>(0A|0D|0D0A){0-80}(0A|0D|0D0A){0-80}(0A|0D|0D0A){34}'V2000'</Sequence>
-    </SubSequence>
-  </ByteSequence>
-    <ByteSequence Reference="EOFoffset">
-    <SubSequence MinFragLength="0" Position="1" SubSeqMaxOffset="16" SubSeqMinOffset="0">
-      <Sequence>(0A|0D|0D0A)'M  END'</Sequence>
-    </SubSequence>
-  </ByteSequence>
-</InternalSignature>
-  <InternalSignature ID="3" Specificity="Specific">
-  <ByteSequence Reference="BOFoffset">
-    <SubSequence MinFragLength="0" Position="1" SubSeqMaxOffset="80" SubSeqMinOffset="0">
-      <Sequence>(0A|0D|0D0A){0-80}(0A|0D|0D0A){0-80}(0A|0D|0D0A){34}'V3000'</Sequence>
-    </SubSequence>
-  </ByteSequence>
-    <ByteSequence Reference="EOFoffset">
-    <SubSequence MinFragLength="0" Position="1" SubSeqMaxOffset="16" SubSeqMinOffset="0">
-      <Sequence>(0A|0D|0D0A)'M  END'</Sequence>
-    </SubSequence>
-  </ByteSequence>
-</InternalSignature>
-</InternalSignatureCollection>
-<FileFormatCollection>
-  <FileFormat ID="1" Name="Structure-data file (SDF)" PUID="dev/1" MIMEType="chemical/x-mdl-sdfile">
-    <InternalSignatureID>1</InternalSignatureID>
-    <Extension>sdf</Extension>
-    <Extension>sd</Extension>
-  </FileFormat>
-  <FileFormat ID="2" Name="V2000 MOL file" PUID="dev/2" Version="V2000" MIMEType="chemical/x-mdl-molfile">
-    <InternalSignatureID>2</InternalSignatureID>
-    <Extension>mol</Extension>
-  </FileFormat>
-    <FileFormat ID="3" Name="V3000 MOL file" PUID="dev/3" Version="V3000" MIMEType="chemical/x-mdl-molfile">
-    <InternalSignatureID>3</InternalSignatureID>
-    <Extension>mol</Extension>
-  </FileFormat>
-</FileFormatCollection></FFSignatureFile>
+    <InternalSignature ID="1" Specificity="Specific">
+      <ByteSequence Reference="BOFoffset">
+        <SubSequence MinFragLength="6" Position="1" SubSeqMaxOffset="80" SubSeqMinOffset="0">
+          <Sequence>'000'</Sequence>
+          <DefaultShift>3.5</DefaultShift>
+          <Shift Byte="'0">2.5</Shift>
+          <Shift Byte="00">1.5</Shift>
+          <Shift Byte="'">0.5</Shift>
+          <LeftFragment MaxOffset="0" MinOffset="0" Position="1">'2'</LeftFragment>
+          <LeftFragment MaxOffset="0" MinOffset="0" Position="1">'3'</LeftFragment>
+          <LeftFragment MaxOffset="0" MinOffset="0" Position="2">'V'</LeftFragment>
+          <LeftFragment MaxOffset="34" MinOffset="34" Position="3">0A</LeftFragment>
+          <LeftFragment MaxOffset="34" MinOffset="34" Position="3">0D</LeftFragment>
+          <LeftFragment MaxOffset="34" MinOffset="34" Position="3">0D0A</LeftFragment>
+          <LeftFragment MaxOffset="80" MinOffset="0" Position="4">0A</LeftFragment>
+          <LeftFragment MaxOffset="80" MinOffset="0" Position="4">0D</LeftFragment>
+          <LeftFragment MaxOffset="80" MinOffset="0" Position="4">0D0A</LeftFragment>
+          <LeftFragment MaxOffset="80" MinOffset="0" Position="5">0A</LeftFragment>
+          <LeftFragment MaxOffset="80" MinOffset="0" Position="5">0D</LeftFragment>
+          <LeftFragment MaxOffset="80" MinOffset="0" Position="5">0D0A</LeftFragment>
+        </SubSequence>
+      </ByteSequence>
+      <ByteSequence Reference="EOFoffset">
+        <SubSequence MinFragLength="0" Position="1" SubSeqMaxOffset="16" SubSeqMinOffset="0">
+          <Sequence>'$$$$'</Sequence>
+          <DefaultShift>-4</DefaultShift>
+          <Shift Byte="'$">-1</Shift>
+          <Shift Byte="$$">-2</Shift>
+          <Shift Byte="$'">-3</Shift>
+          <LeftFragment MaxOffset="0" MinOffset="0" Position="1">0A</LeftFragment>
+          <LeftFragment MaxOffset="0" MinOffset="0" Position="1">0D</LeftFragment>
+          <LeftFragment MaxOffset="0" MinOffset="0" Position="1">0D0A</LeftFragment>
+        </SubSequence>
+      </ByteSequence>
+    </InternalSignature>
+    <InternalSignature ID="2" Specificity="Specific">
+      <ByteSequence Reference="BOFoffset">
+        <SubSequence MinFragLength="3" Position="1" SubSeqMaxOffset="80" SubSeqMinOffset="0">
+          <Sequence>'V2000'</Sequence>
+          <DefaultShift>4.5</DefaultShift>
+          <Shift Byte="'V">3.5</Shift>
+          <Shift Byte="20">2.5</Shift>
+          <Shift Byte="00">1.5</Shift>
+          <Shift Byte="'">0.5</Shift>
+          <LeftFragment MaxOffset="34" MinOffset="34" Position="1">0A</LeftFragment>
+          <LeftFragment MaxOffset="34" MinOffset="34" Position="1">0D</LeftFragment>
+          <LeftFragment MaxOffset="34" MinOffset="34" Position="1">0D0A</LeftFragment>
+          <LeftFragment MaxOffset="80" MinOffset="0" Position="2">0A</LeftFragment>
+          <LeftFragment MaxOffset="80" MinOffset="0" Position="2">0D</LeftFragment>
+          <LeftFragment MaxOffset="80" MinOffset="0" Position="2">0D0A</LeftFragment>
+          <LeftFragment MaxOffset="80" MinOffset="0" Position="3">0A</LeftFragment>
+          <LeftFragment MaxOffset="80" MinOffset="0" Position="3">0D</LeftFragment>
+          <LeftFragment MaxOffset="80" MinOffset="0" Position="3">0D0A</LeftFragment>
+        </SubSequence>
+      </ByteSequence>
+      <ByteSequence Reference="EOFoffset">
+        <SubSequence MinFragLength="0" Position="1" SubSeqMaxOffset="16" SubSeqMinOffset="0">
+          <Sequence>'M END'</Sequence>
+          <DefaultShift>-5</DefaultShift>
+          <Shift Byte="'M">-1</Shift>
+          <Shift Byte="  ">-2</Shift>
+          <Shift Byte="EN">-3</Shift>
+          <Shift Byte="D'">-4</Shift>
+          <LeftFragment MaxOffset="0" MinOffset="0" Position="1">0A</LeftFragment>
+          <LeftFragment MaxOffset="0" MinOffset="0" Position="1">0D</LeftFragment>
+          <LeftFragment MaxOffset="0" MinOffset="0" Position="1">0D0A</LeftFragment>
+        </SubSequence>
+      </ByteSequence>
+    </InternalSignature>
+    <InternalSignature ID="3" Specificity="Specific">
+      <ByteSequence Reference="BOFoffset">
+        <SubSequence MinFragLength="3" Position="1" SubSeqMaxOffset="80" SubSeqMinOffset="0">
+          <Sequence>'V3000'</Sequence>
+          <DefaultShift>4.5</DefaultShift>
+          <Shift Byte="'V">3.5</Shift>
+          <Shift Byte="30">2.5</Shift>
+          <Shift Byte="00">1.5</Shift>
+          <Shift Byte="'">0.5</Shift>
+          <LeftFragment MaxOffset="34" MinOffset="34" Position="1">0A</LeftFragment>
+          <LeftFragment MaxOffset="34" MinOffset="34" Position="1">0D</LeftFragment>
+          <LeftFragment MaxOffset="34" MinOffset="34" Position="1">0D0A</LeftFragment>
+          <LeftFragment MaxOffset="80" MinOffset="0" Position="2">0A</LeftFragment>
+          <LeftFragment MaxOffset="80" MinOffset="0" Position="2">0D</LeftFragment>
+          <LeftFragment MaxOffset="80" MinOffset="0" Position="2">0D0A</LeftFragment>
+          <LeftFragment MaxOffset="80" MinOffset="0" Position="3">0A</LeftFragment>
+          <LeftFragment MaxOffset="80" MinOffset="0" Position="3">0D</LeftFragment>
+          <LeftFragment MaxOffset="80" MinOffset="0" Position="3">0D0A</LeftFragment>
+        </SubSequence>
+      </ByteSequence>
+      <ByteSequence Reference="EOFoffset">
+        <SubSequence MinFragLength="0" Position="1" SubSeqMaxOffset="16" SubSeqMinOffset="0">
+          <Sequence>'M END'</Sequence>
+          <DefaultShift>-5</DefaultShift>
+          <Shift Byte="'M">-1</Shift>
+          <Shift Byte="  ">-2</Shift>
+          <Shift Byte="EN">-3</Shift>
+          <Shift Byte="D'">-4</Shift>
+          <LeftFragment MaxOffset="0" MinOffset="0" Position="1">0A</LeftFragment>
+          <LeftFragment MaxOffset="0" MinOffset="0" Position="1">0D</LeftFragment>
+          <LeftFragment MaxOffset="0" MinOffset="0" Position="1">0D0A</LeftFragment>
+        </SubSequence>
+      </ByteSequence>
+    </InternalSignature>
+  </InternalSignatureCollection>
+  <FileFormatCollection>
+    <FileFormat ID="1" Name="Structure-data file (SDF)" PUID="dev/1"
+      MIMEType="chemical/x-mdl-sdfile">
+      <InternalSignatureID>1</InternalSignatureID>
+      <Extension>sdf</Extension>
+      <Extension>sd</Extension>
+    </FileFormat>
+    <FileFormat ID="2" Name="V2000 MOL file" PUID="dev/2" Version="V2000"
+      MIMEType="chemical/x-mdl-molfile">
+      <InternalSignatureID>2</InternalSignatureID>
+      <Extension>mol</Extension>
+    </FileFormat>
+    <FileFormat ID="3" Name="V3000 MOL file" PUID="dev/3" Version="V3000"
+      MIMEType="chemical/x-mdl-molfile">
+      <InternalSignatureID>3</InternalSignatureID>
+      <Extension>mol</Extension>
+    </FileFormat>
+  </FileFormatCollection>
+</FFSignatureFile>
