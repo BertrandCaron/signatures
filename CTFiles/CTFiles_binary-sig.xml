@@ -59,7 +59,7 @@
       </ByteSequence>
       <ByteSequence Reference="EOFoffset">
         <SubSequence MinFragLength="0" Position="1" SubSeqMaxOffset="16" SubSeqMinOffset="0">
-          <Sequence>'M END'</Sequence>
+          <Sequence>'M  END'</Sequence>
           <DefaultShift>-5</DefaultShift>
           <Shift Byte="'M">-1</Shift>
           <Shift Byte="  ">-2</Shift>
@@ -93,7 +93,7 @@
       </ByteSequence>
       <ByteSequence Reference="EOFoffset">
         <SubSequence MinFragLength="0" Position="1" SubSeqMaxOffset="16" SubSeqMinOffset="0">
-          <Sequence>'M END'</Sequence>
+          <Sequence>'M  END'</Sequence>
           <DefaultShift>-5</DefaultShift>
           <Shift Byte="'M">-1</Shift>
           <Shift Byte="  ">-2</Shift>
